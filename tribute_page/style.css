@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    background-color: #8b5e34;   
+}
+h1
+{   background-color: #8b5e34;   
+    font-family: 'Merriweather', serif;    
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: #d1be9c;
+}
+#intro_div
+{
+    display: grid;
+    grid-template-columns: 68% 32%;
+    grid-template-rows: repeat(1);
+}
+h2{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    background-color: #8b5e34;
+    text-decoration: underline;
+    margin: 0;   
+    color: #d1be9c;
+    padding: 15px;
+    padding-top: 5px;
+}
+h3{
+    font-family: 'Arimo', sans-serif;
+    color: #d1be9c;
+    text-decoration: underline;
+    
+}
+#intro_img{
+    height: auto;
+    width: 100%;    
+    border: 1px solid black;
+}
+#intro{
+    font-family: 'Arvo', serif; 
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 631px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    background-color: #252422;
+    color:white;
+    border: 1px solid black;
+}
+#inventions{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,330px);
+    border: none;
+    padding: 0;   
+}
+#sub_inv{
+    border: 1px solid black;
+    padding: 10px;
+    background-image:
+    linear-gradient(
+      to right, 
+      #252422, #816c61
+    );
+    color:#f3eff5;
+}
+#in_img{
+    display: block;
+    margin: auto;
+    height: 130px;
+    width: auto; 
+}
+#in_img:hover{
+    cursor: pointer;
+}
+#years{
+    padding: 0;
+    font-size: 1.2rem;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
