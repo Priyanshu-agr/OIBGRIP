@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(-45deg, #23d5ab, #0077b6, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.calculator{    
+    padding-top: 20px;
+    display: grid;  
+    justify-content: center;    
+    align-content: center;    
+    height: 90vh;
+    grid-template-columns: repeat(4,85px);
+    grid-template-rows: minmax(95px,auto) repeat(5,85px);
+}
+button{
+    cursor: pointer;
+    font-size:19px;    
+    margin:-1px;    
+}
+#display{      
+    grid-column: 1/-1;
+    display: flex;    
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;    
+    padding: 10px;
+    background-color: aliceblue;
+    word-break: break-all;
+    border: 2px solid black;
+    margin: -1px;
+      
+}
+div[value="current"]
+{
+    font-size: 25px;
+}
+div[value="previous"]
+{
+    font-size: 18px;
+}
+button:hover{
+    opacity: 0.9;
+    font-size: 21px;
+}
+.two-size{
+    grid-column: span 2;
+}
+button[value="num"]
+{
+    background-color: rgb(239, 217, 206);
+}
+button[value="operation"]
+{
+    background-color: #ffa62b;
+}
+button[value="equal"]
+{
+    background-color:#4ecdc4 ;
+}
+button[value="all_clear"]
+{
+    background-color: #ff0000;
+}
+button[value="delete"]
+{
+    background-color: #ff6b6b;
+}
