@@ -1,0 +1,61 @@
+body{
+    /* background-color:#22223b;     */
+    background-color: #000814;   
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;     
+}
+h2{
+    text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+}
+#pending_list{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+#completed_list{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+#input_form{
+    display: flex;
+    justify-content: center; 
+}
+
+input,button{
+appearance: none;
+border: none;
+outline: none;
+background: none;
+}
+button{
+    font-size: 1rem;
+}
+input{
+    font-size:1.2rem;
+    background-color:#979dac ;
+    padding:0.7rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    color:#00171f;
+    overflow-wrap: break-word;
+}
+#delete{
+    color:red
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#edit{
+    color: #4cc9f0;
+}
+#add_task{
+    color:#f72585;
+}
